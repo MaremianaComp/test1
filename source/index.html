@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none" width="0" height="0">
+    <svg viewBox="0 0 16 16" fill="none" id="login" width="16" height="16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="currentColor" />
+    </svg>
+    <svg viewBox="0 0 16 16" fill="none" id="cart" width="16" height="16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="currentColor" />
+    </svg>
+    <svg viewBox="0 0 13 16" fill="none" id="location" width="13" height="16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8 6.5C11.8 8.83027 10.4332 10.9174 8.8884 12.5109C8.13169 13.2915 7.37106 13.9131 6.79878 14.3393C6.6918 14.419 6.59177 14.4916 6.5 14.5569C6.40823 14.4916 6.3082 14.419 6.20122 14.3393C5.62894 13.9131 4.86831 13.2915 4.1116 12.5109C2.56678 10.9174 1.2 8.83027 1.2 6.5C1.2 3.57289 3.57289 1.2 6.5 1.2C9.42711 1.2 11.8 3.57289 11.8 6.5ZM13 6.5C13 12.0899 6.5 16 6.5 16C6.5 16 0 12.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5ZM8.8 6.5C8.8 7.77026 7.77026 8.8 6.5 8.8C5.22974 8.8 4.2 7.77026 4.2 6.5C4.2 5.22974 5.22974 4.2 6.5 4.2C7.77026 4.2 8.8 5.22974 8.8 6.5ZM10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5Z" fill="currentColor" />
+    </svg>
+    <svg viewBox="0 0 13 16" fill="none" id="phone" width="13" height="16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.47771 1.49035C0.407036 2.09016 -0.173009 3.23613 0.0457595 4.31941L0.404071 6.09367C1.3302 9.21701 2.90461 11.863 5.22921 14.2029L6.63362 15.3911C7.49109 16.1166 8.80393 16.2022 9.8746 15.6024L12.1043 14.3533C12.9766 13.8646 13.2662 12.8186 12.7298 12.0941L10.7951 9.48096C10.2793 8.7842 9.20705 8.66949 8.42947 9.22787L7.05383 10.2157C5.82614 9.33632 5.0461 8.02537 4.87507 6.55403L6.44457 5.89198C7.33172 5.51776 7.76545 4.55939 7.4015 3.77755L6.03652 0.845267C5.65806 0.0322596 4.57968 -0.247395 3.7074 0.241264L1.47771 1.49035ZM1.2824 4.01819C1.16306 3.42725 1.47948 2.80211 2.06354 2.47492L4.29323 1.22582C4.5113 1.10366 4.78089 1.17357 4.87551 1.37683L6.24049 4.30911C6.33147 4.50457 6.22304 4.74416 6.00126 4.83771L3.57088 5.8629L3.58692 6.27871C3.66894 8.40504 4.79869 10.3037 6.65548 11.4358L7.01858 11.6572L9.14878 10.1275C9.34317 9.98792 9.61123 10.0166 9.74019 10.1908L11.6748 12.8039C11.8089 12.9851 11.7365 13.2466 11.5185 13.3687L9.28877 14.6178C8.70471 14.945 7.98854 14.8983 7.52079 14.5026L6.11637 13.3144C4.3893 11.6193 2.29008 8.09128 1.64071 5.79245L1.2824 4.01819Z" fill="currentColor" />
+    </svg>
+    <svg viewBox="0 0 12 16" fill="none" id="htmlacademy" width="12" height="16">
+      <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="currentColor" />
+    </svg>
+
+  </svg>
+
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__logo" href="/">
+        <picture>
+          <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="82" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
+        </picture>
+      </a>
+      <h1 class="main-header__description">Интернет-магазин кофейных напитков</h1>
+    </div>
+    <div class="main-header__actions">
+      <a class="main-header__link nav-link" href="#">
+        <svg class="main-header__link-icon" width="16" height="16">
+          <use href="#login"></use>
+        </svg>
+        <span class="main-header__link-caption">Войти</span>
+      </a>
+      <a class="main-header__link nav-link" href="#">
+        <svg class="main-header__link-icon" width="16" height="16">
+          <use href="#cart"></use>
+        </svg>
+        <span class="main-header__link-caption">Корзина</span>
+      </a>
+    </div>
+
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button" aria-label="Main nav">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="main-nav__link main-nav__link--index main-nav__link--current nav-link" href="/">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link main-nav__link--index nav-link" href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link main-nav__link--index nav-link" href="#">Доставка</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link main-nav__link--index nav-link" href="#">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <h1>Страница для старта</h1>
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__wrapper">
+
+      <div class="footer__section">
+        <div class="container">
+          <div class="footer__brand-block">
+            <a class="footer__logo" href="/">
+              <picture>
+                <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-desktop.svg">
+                <img src="images/logo-tablet.svg" width="82" height="36" alt="Логотип Drink2Go">
+              </picture>
+            </a>
+            <h1 class="footer__description">Интернет-магазин кофейных напитков</h1>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Vkontakte">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--pinterest" href="https://ru.pinterest.com/keks_is_html_academy" target="_blank" rel="noreferrer noopener" aria-label="Pinterest">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--odnoklassniki" href="https://odnoklassniki.ru/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Odnoklassniki">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__sections">
+
+        <section class="footer__section">
+          <div class="container">
+            <h4 class="footer__section-title">Интернет-магазин</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Каталог</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Способы оплаты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__section">
+          <div class="container">
+            <h4 class="footer__section-title">Медиа</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Информация для СМИ</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link nav-link" href="#">Правовая информация</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__section">
+          <div class="container">
+            <h4 class="footer__section-title">Контакты</h4>
+            <address class="footer__address">
+              <ul class="footer__contact-list">
+                <li class="footer__contact-item">
+                  <svg class="footer__icon" width="13" height="16">
+                    <use href="#location"></use>
+                  </svg>
+                  <p class="footer__address-text">
+                    Санкт-Петербург, набережная реки Карповки, дом 5
+                  </p>
+                </li>
+                <li class="footer__contact-item">
+                  <svg class="footer__icon" width="13" height="16">
+                    <use href="#phone"></use>
+                  </svg>
+                  <a class="footer__phone" href="tel:+79999999999">
+                    +7 (999) 999-99-99</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="footer__copyright">
+        Разработано в
+        <a class="footer__academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+          HTML Academy
+          <svg class="footer__academy-icon" width="12" height="16">
+            <use href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
