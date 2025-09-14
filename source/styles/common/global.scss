@@ -6,24 +6,11 @@
 }
 
 body {
-  font-family: $montserrat-medium;
+  font-family: $font-main;
   font-size: 12px;
   line-height: 16px;
-  color: $base-black;
+  // color: $base-black;
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  border: none;
-}
-
-img {
-  object-fit: contain;
 }
 
 .visually-hidden {
@@ -36,4 +23,9 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
 }

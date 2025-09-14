@@ -1,17 +1,17 @@
-@mixin list-resetting {
+@mixin list-resseting {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-@mixin tablet() {
-  @media (min-width: $tablet-width) {
+@mixin mobile() {
+  @media #{$mobile-only} {
     @content;
   }
 }
 
-@mixin desktop() {
-  @media (min-width: $desktop-width) {
+@mixin tablet() {
+  @media (min-width: $breakpoint-tablet) {
     @content;
   }
 }

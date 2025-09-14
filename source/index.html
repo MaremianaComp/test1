@@ -5,204 +5,97 @@
   <meta charset="UTF-8">
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none" width="0" height="0">
-    <svg viewBox="0 0 16 16" fill="none" id="login" width="16" height="16">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="currentColor" />
-    </svg>
-    <svg viewBox="0 0 16 16" fill="none" id="cart" width="16" height="16">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="currentColor" />
-    </svg>
-    <svg viewBox="0 0 13 16" fill="none" id="location" width="13" height="16">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8 6.5C11.8 8.83027 10.4332 10.9174 8.8884 12.5109C8.13169 13.2915 7.37106 13.9131 6.79878 14.3393C6.6918 14.419 6.59177 14.4916 6.5 14.5569C6.40823 14.4916 6.3082 14.419 6.20122 14.3393C5.62894 13.9131 4.86831 13.2915 4.1116 12.5109C2.56678 10.9174 1.2 8.83027 1.2 6.5C1.2 3.57289 3.57289 1.2 6.5 1.2C9.42711 1.2 11.8 3.57289 11.8 6.5ZM13 6.5C13 12.0899 6.5 16 6.5 16C6.5 16 0 12.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5ZM8.8 6.5C8.8 7.77026 7.77026 8.8 6.5 8.8C5.22974 8.8 4.2 7.77026 4.2 6.5C4.2 5.22974 5.22974 4.2 6.5 4.2C7.77026 4.2 8.8 5.22974 8.8 6.5ZM10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5Z" fill="currentColor" />
-    </svg>
-    <svg viewBox="0 0 13 16" fill="none" id="phone" width="13" height="16">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.47771 1.49035C0.407036 2.09016 -0.173009 3.23613 0.0457595 4.31941L0.404071 6.09367C1.3302 9.21701 2.90461 11.863 5.22921 14.2029L6.63362 15.3911C7.49109 16.1166 8.80393 16.2022 9.8746 15.6024L12.1043 14.3533C12.9766 13.8646 13.2662 12.8186 12.7298 12.0941L10.7951 9.48096C10.2793 8.7842 9.20705 8.66949 8.42947 9.22787L7.05383 10.2157C5.82614 9.33632 5.0461 8.02537 4.87507 6.55403L6.44457 5.89198C7.33172 5.51776 7.76545 4.55939 7.4015 3.77755L6.03652 0.845267C5.65806 0.0322596 4.57968 -0.247395 3.7074 0.241264L1.47771 1.49035ZM1.2824 4.01819C1.16306 3.42725 1.47948 2.80211 2.06354 2.47492L4.29323 1.22582C4.5113 1.10366 4.78089 1.17357 4.87551 1.37683L6.24049 4.30911C6.33147 4.50457 6.22304 4.74416 6.00126 4.83771L3.57088 5.8629L3.58692 6.27871C3.66894 8.40504 4.79869 10.3037 6.65548 11.4358L7.01858 11.6572L9.14878 10.1275C9.34317 9.98792 9.61123 10.0166 9.74019 10.1908L11.6748 12.8039C11.8089 12.9851 11.7365 13.2466 11.5185 13.3687L9.28877 14.6178C8.70471 14.945 7.98854 14.8983 7.52079 14.5026L6.11637 13.3144C4.3893 11.6193 2.29008 8.09128 1.64071 5.79245L1.2824 4.01819Z" fill="currentColor" />
-    </svg>
-    <svg viewBox="0 0 12 16" fill="none" id="htmlacademy" width="12" height="16">
-      <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="currentColor" />
-    </svg>
+    <symbol id="search" viewBox="0 0 20 20" fill="none">
+      <path d="M14.6033 14.6031L18.2858 18.2857" stroke="currentColor" stroke-linejoin="round" />
+      <path d="M16.4444 9.07927C16.4444 13.1469 13.147 16.4443 9.07939 16.4443C5.01179 16.4443 1.71436 13.1469 1.71436 9.07927C1.71436 5.01167 5.01179 1.71423 9.07939 1.71423C13.147 1.71423 16.4444 5.01167 16.4444 9.07927Z" stroke="currentColor" />
+    </symbol>
+    <symbol id="login" viewBox="0 0 20 20" fill="none">
+      <path d="M9.92871 1.64282C13.1745 1.64282 15.8056 4.27401 15.8057 7.51978C15.8057 10.7584 13.1819 13.3264 9.92871 13.3264C6.67562 13.3263 4.05176 10.7583 4.05176 7.51978C4.05186 4.27407 6.68301 1.64292 9.92871 1.64282Z" stroke="currentColor" />
+      <path d="M1.14282 19.0743V19.0743C4.96511 12.061 15.0348 12.061 18.8571 19.0743V19.0743" stroke="currentColor" />
+    </symbol>
+    <symbol id="favorite" viewBox="0 0 20 20" fill="none">
+      <path d="M16.9088 10.8218L10.0076 17.7143L3.10643 10.8218C2.65123 10.3751 2.29268 9.83821 2.05335 9.24492C1.81402 8.65163 1.6991 8.0148 1.71583 7.37453C1.73255 6.73426 1.88056 6.10441 2.15053 5.52465C2.4205 4.94489 2.80658 4.42778 3.28447 4.00589C3.76235 3.58399 4.32169 3.26644 4.92725 3.07325C5.53281 2.88005 6.17148 2.81538 6.80304 2.88332C7.43461 2.95126 8.04538 3.15033 8.5969 3.468C9.14842 3.78567 9.62874 4.21506 10.0076 4.72912C10.3881 4.21879 10.869 3.79316 11.4202 3.47886C11.9713 3.16456 12.5808 2.96836 13.2106 2.90255C13.8404 2.83673 14.4769 2.90271 15.0802 3.09636C15.6836 3.29001 16.2408 3.60716 16.717 4.02796C17.1932 4.44876 17.5782 4.96414 17.8478 5.54187C18.1174 6.11959 18.2658 6.74722 18.2838 7.38546C18.3018 8.0237 18.189 8.65881 17.9524 9.25106C17.7158 9.8433 17.3605 10.3799 16.9088 10.8273" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="cart" viewBox="0 0 20 20" fill="none">
+      <path d=" M6.85711 4.62502C7.43524 0.735771 13.0339 0.752342 13.7143 4.62502M17.4184 6.33966L18.8334 15.4386C18.8781 15.7265 18.8595 16.0207 18.7786 16.3009C18.6978 16.581 18.5568 16.8406 18.3651 17.0618C18.1735 17.2831 17.9358 17.4607 17.6684 17.5825C17.4009 17.7044 17.11 17.7676 16.8156 17.7679H3.18642C2.8918 17.7679 2.60066 17.7049 2.33295 17.5832C2.06525 17.4614 1.82731 17.2839 1.63546 17.0626C1.4436 16.8414 1.30237 16.5817 1.22143 16.3014C1.1405 16.021 1.12178 15.7267 1.16657 15.4386L2.58159 6.33966C2.65581 5.86206 2.90043 5.42655 3.27114 5.11202C3.64185 4.79749 4.11414 4.62472 4.60246 4.62502H15.3995C15.8877 4.62496 16.3597 4.79784 16.7302 5.11235C17.1007 5.42686 17.3452 5.86223 17.4194 6.33966H17.4184Z" stroke="currentColor" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="toggle" viewBox="0 0 32 32" fill="none">
+      <line y1=" 13.25" x2="32" y2="13.25" stroke="currentColor" stroke-width="1.5" />
+      <line x1="14" y1="22.25" x2="32" y2="22.25" stroke="currentColor" stroke-width="1.5" />
+    </symbol>
 
   </svg>
-
   <header class="main-header">
-    <div class="main-header__container">
-      <a class="main-header__logo" href="/">
-        <picture>
-          <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source width="82" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <img src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
-        </picture>
-      </a>
-      <h1 class="main-header__description">Интернет-магазин кофейных напитков</h1>
-    </div>
-    <div class="main-header__actions">
-      <a class="main-header__link nav-link" href="#">
-        <svg class="main-header__link-icon" width="16" height="16">
-          <use href="#login"></use>
-        </svg>
-        <span class="main-header__link-caption">Войти</span>
-      </a>
-      <a class="main-header__link nav-link" href="#">
-        <svg class="main-header__link-icon" width="16" height="16">
-          <use href="#cart"></use>
-        </svg>
-        <span class="main-header__link-caption">Корзина</span>
-      </a>
-    </div>
-
-    <nav class="main-nav main-nav--closed">
-      <button class="main-nav__toggle" type="button" aria-label="Main nav">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link main-nav__link--index main-nav__link--current nav-link" href="/">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="main-nav__link main-nav__link--index nav-link" href="#">Каталог</a>
-          </li>
-          <li class="site-list__item">
-            <a class="main-nav__link main-nav__link--index nav-link" href="#">Доставка</a>
-          </li>
-          <li class="site-list__item">
-            <a class="main-nav__link main-nav__link--index nav-link" href="#">О нас</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <ul class="main-nav__list site-list main-nav__list--close">
+        <li class="site-list__item">
+          <a class="main-nav__link" href="#">Каталог</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link" href="#">О компании</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link" href="#">Магазины</a>
+        </li>
+      </ul>
     </nav>
-
-  </header>
-
-  <main>
-    <h1>Страница для старта</h1>
-  </main>
-
-  <footer class="footer">
-
-    <div class="footer__wrapper">
-
-      <div class="footer__section">
-        <div class="container">
-          <div class="footer__brand-block">
-            <a class="footer__logo" href="/">
-              <picture>
-                <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-desktop.svg">
-                <img src="images/logo-tablet.svg" width="82" height="36" alt="Логотип Drink2Go">
-              </picture>
-            </a>
-            <h1 class="footer__description">Интернет-магазин кофейных напитков</h1>
-            <div class="footer__social social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Vkontakte">
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--pinterest" href="https://ru.pinterest.com/keks_is_html_academy" target="_blank" rel="noreferrer noopener" aria-label="Pinterest">
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--odnoklassniki" href="https://odnoklassniki.ru/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Odnoklassniki">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer__sections">
-
-        <section class="footer__section">
-          <div class="container">
-            <h4 class="footer__section-title">Интернет-магазин</h4>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Каталог</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Доставка</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Способы оплаты</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">О нас</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="footer__section">
-          <div class="container">
-            <h4 class="footer__section-title">Медиа</h4>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Блог</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Информация для СМИ</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link nav-link" href="#">Правовая информация</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="footer__section">
-          <div class="container">
-            <h4 class="footer__section-title">Контакты</h4>
-            <address class="footer__address">
-              <ul class="footer__contact-list">
-                <li class="footer__contact-item">
-                  <svg class="footer__icon" width="13" height="16">
-                    <use href="#location"></use>
-                  </svg>
-                  <p class="footer__address-text">
-                    Санкт-Петербург, набережная реки Карповки, дом 5
-                  </p>
-                </li>
-                <li class="footer__contact-item">
-                  <svg class="footer__icon" width="13" height="16">
-                    <use href="#phone"></use>
-                  </svg>
-                  <a class="footer__phone" href="tel:+79999999999">
-                    +7 (999) 999-99-99</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-        </section>
-
-      </div>
-
-    </div>
-
-    <div class="container">
-      <p class="footer__copyright">
-        Разработано в
-        <a class="footer__academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
-          HTML Academy
-          <svg class="footer__academy-icon" width="12" height="16">
-            <use href="#htmlacademy"></use>
+    <a class="main-header__logo" href="/">
+      <img src="images/logo.svg" width="100" height="22" alt="Логотип Logo">
+    </a>
+    <ul class="main-header__list">
+      <li class="main-header__item main-header__item--search">
+        <a class="main-header__link" href="#" aria-label="Поиск">
+          <svg class="main-header__link-icon" width="20" height="20">
+            <use href="#search"></use>
           </svg>
+          <span class="visually-hidden">Поиск</span>
         </a>
-      </p>
-    </div>
-  </footer>
-
+      </li>
+      <li class="main-header__item main-header__item--login">
+        <a class="main-header__link" href="#" aria-label="Войти">
+          <svg class="main-header__link-icon" width="20" height="20">
+            <use href="#login"></use>
+          </svg>
+          <span class="visually-hidden">Войти</span>
+        </a>
+      </li>
+      <li class="main-header__item main-header__item--favorite">
+        <a class="main-header__link" href="#" aria-label="Избранное">
+          <svg class="main-header__link-icon" width="20" height="20">
+            <use href="#favorite"></use>
+          </svg>
+          <span class="visually-hidden">Избранное</span>
+          <span class="main-header__favorite-count">8</span>
+        </a>
+      </li>
+      <li class="main-header__item main-header__item--cart">
+        <a class="main-header__link" href="#" aria-label="Корзина">
+          <svg class="main-header__link-icon main-header__link-icon--mobile">
+            <use href="#cart"></use>
+          </svg>
+          <span class="visually-hidden">Корзина</span>
+          <span class="main-header__cart-count">4</span>
+        </a>
+      </li>
+    </ul>
+    <button class="main-header__nav-toggle button" type="button" aria-label="Main nav">
+      <svg class="main-header__nav-toggle-icon" width="32" height="32">
+        <use href="#toggle"></use>
+      </svg>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </header>
+  <main class="main-container">заказ</main>
+  <footer class="main-footer"></footer>
 </body>
 
 </html>
