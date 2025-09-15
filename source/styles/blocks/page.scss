@@ -6,8 +6,10 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 0 16px;
+}
+
+.page__body a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

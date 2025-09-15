@@ -1,7 +1,11 @@
-$font-main: "Inter", "Arial", sans-serif;
+$font-family: "Helvetica", "Arial", sans-serif;
+$second-family: "Inter", "Arial", sans-serif;
 
 /* цвета */
-$f-main: #000000;
+$color-primary: #000000;
+$color-text-secondary: #6e6e6e;
+$color-border: #c8c8c8;
+$color-contrast: #ffffff;
 
 $desktop-width: 1600px;
 $breakpoint-tablet: 768px;

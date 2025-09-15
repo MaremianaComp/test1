@@ -6,4 +6,8 @@
 
 .main-nav__list {
   @include list-resseting;
+
+  display: flex;
+  gap: 40px;
 }
+

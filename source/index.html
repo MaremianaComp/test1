@@ -34,8 +34,8 @@
     </symbol>
 
   </svg>
-  <header class="main-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+  <header class="main-header container">
+    <nav class="main-nav main-nav--closed main-nav--nojs text-interface">
       <ul class="main-nav__list site-list main-nav__list--close">
         <li class="site-list__item">
           <a class="main-nav__link" href="#">Каталог</a>
@@ -74,7 +74,7 @@
             <use href="#favorite"></use>
           </svg>
           <span class="visually-hidden">Избранное</span>
-          <span class="main-header__favorite-count">8</span>
+          <span class="main-header__count main-header__count--favorite">8</span>
         </a>
       </li>
       <li class="main-header__item main-header__item--cart">
@@ -83,7 +83,7 @@
             <use href="#cart"></use>
           </svg>
           <span class="visually-hidden">Корзина</span>
-          <span class="main-header__cart-count">4</span>
+          <span class="main-header__count main-header__count--cart">4</span>
         </a>
       </li>
     </ul>
@@ -94,8 +94,14 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
   </header>
-  <main class="main-container">заказ</main>
-  <footer class="main-footer"></footer>
+  <main class="main-container">
+    <div class="container">
+      заказ
+      <span class="text-interface">Есть аккаунт?</span><button class="button text-interface">Войти</button>
+      <button class="button text-interface">Восстановить</button>
+    </div>
+  </main>
+  <footer class="main-footer container">Подвал</footer>
 </body>
 
 </html>

@@ -6,10 +6,11 @@
 }
 
 body {
-  font-family: $font-main;
-  font-size: 12px;
-  line-height: 16px;
-  // color: $base-black;
+  font-family: $second-family;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $color-primary;
   margin: 0;
 }
 
