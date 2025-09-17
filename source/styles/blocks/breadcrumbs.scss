@@ -1,0 +1,12 @@
+.breadcrumbs {
+  @include list-resseting;
+
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  color: #6e6e6e;
+}

@@ -1,0 +1,62 @@
+.cards__item {
+  border-top: 0.5px solid $color-border;
+  border-bottom: 0.5px solid $color-border;
+  padding: 16px 0;
+
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-template-areas:
+    "photo   title"
+    "details details"
+    "prices  prices";
+  align-items: start;
+}
+
+.cards__link-image {
+  grid-area: photo;
+}
+
+.cards__link-text {
+  grid-area: title;
+}
+
+.cards__details-wrapper {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__prices-group {
+  grid-area: prices;
+  display: flex;
+  flex-direction: column;
+}
+
+@include tablet {
+  .cards__item {
+    grid-template:
+      "photo title   prices" auto
+      "photo details prices" auto
+      "photo .       prices" auto / 130px 1fr auto;
+  }
+
+  .cards__link-image {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+
+  .cards__link-text {
+    grid-area: title;
+  }
+
+  .cards__details-wrapper {
+    grid-area: details;
+  }
+
+  .cards__prices-group {
+    grid-area: prices;
+  }
+
+  .cards__detail-item {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,9 @@
+.products__break {
+  @include tablet {
+    display: none;
+  }
+}
+
+.products__list {
+  @include list-resseting;
+}

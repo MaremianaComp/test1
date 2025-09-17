@@ -1,4 +1,9 @@
 .main-container {
-  border-top: 0.5px solid $color-border;
-  border-bottom: 0.5px solid $color-border;
+  padding-top: 5px;
+
+  @include tablet {
+    border-top: 0.5px solid $color-border;
+    border-bottom: 0.5px solid $color-border;
+    padding-top: 50px;
+  }
 }

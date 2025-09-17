@@ -9,6 +9,10 @@
   }
 }
 
+.main-header a {
+  color: $color-primary;
+}
+
 .main-header__logo {
   display: flex;
   height: 100%;
@@ -42,10 +46,6 @@
   align-items: center;
 }
 
-// .main-header__link-icon {
-//   color: $color-primary;
-// }
-
 .main-header__link-icon--mobile {
   width: 20px;
   height: 20px;
@@ -73,7 +73,7 @@
 }
 
 .main-header__nav-toggle {
-  margin-left: auto;
+  margin-left: 24px;
   padding: 0;
   height: 100%;
   display: flex;
