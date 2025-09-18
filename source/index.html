@@ -192,7 +192,7 @@
               </div>
               <div class="cards__prices-group">
                 <div class="cards__prices">
-                  <span class="cards__old-price">12 000 ₽</span>
+                  <span class="cards__old-price text-meta">12 000 ₽</span>
                   <span class="cards__price">10 000 ₽</span>
                 </div>
                 <label class="visually-hidden" for="quantity">Количество</label>
@@ -212,7 +212,7 @@
                   </button>
                 </div>
                 <div class="cards__total">
-                  <span class="cards__total-old">24 000 ₽</span>
+                  <span class="cards__total-old text-meta">24 000 ₽</span>
                   <span class="cards__total-price">20 000 ₽</span>
                 </div>
               </div>
@@ -223,10 +223,43 @@
           </ul>
         </section>
 
-        <!-- text-meta: зачеркнутая старая цена и "Сезон" и его значение, подпись "Сроки получения могут измениться",
+        <section class="order-form__section contacts">
+          <h2 class="contacts__title section-title">Контактные данные</h2>
+          <div class="contacts__group">
+            <div class="contacts__item">
+              <label class="contacts__label" for="first-name">Имя</label>
+              <input class="contacts__input" type="text" id="first-name" name="first_name" placeholder="Имя" value="Александр" required autocomplete="given-name">
+            </div>
+
+            <div class="contacts__item">
+              <label class="contacts__label visually-hidden" for="last-name">Фамилия</label>
+              <input class="contacts__input" type="text" id="last-name" name="last_name" placeholder="Фамилия" required autocomplete="family-name">
+            </div>
+
+            <div class="contacts__item">
+              <label class="contacts__label visually-hidden" for="phone">Телефон</label>
+              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="tel">
+            </div>
+
+            <div class="contacts__item">
+              <label class="contacts__label visually-hidden" for="email">Email</label>
+              <input class="contacts__input" type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+            </div>
+
+            <div class="contacts__item contacts__item--full-width">
+              <label class="contacts__label" for="address">Адрес доставки</label>
+              <input class="contacts__input" type="text" id="address" name="address" placeholder="Адрес доставки" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required autocomplete="shipping" aria-label="Полный адрес доставки">
+
+              <div class="contacts__map" id="map">
+                Карта
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- text-meta: "Сроки получения могут измениться",
         подпись к полю "Использовано 0/142 символов"
 
-        section-title: Контактные данные, Оплата, Итого -->
+        section-title: Оплата, Итого -->
 
       </form>
     </div>
