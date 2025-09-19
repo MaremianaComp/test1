@@ -1,0 +1,41 @@
+.order-form {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    grid-template-areas:
+      "title-block total"
+      "products    total"
+      "contacts    map"
+      "payment     map"
+      "comment     map";
+  }
+}
+
+.title-block {
+  grid-area: title-block;
+}
+
+.products {
+  grid-area: products;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.payment {
+  grid-area: payment;
+}
+
+.comment {
+  grid-area: comment;
+}
+
+.total {
+  grid-area: total;
+}
+
+.map {
+  grid-area: map;
+}

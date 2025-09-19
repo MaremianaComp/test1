@@ -108,15 +108,14 @@
           </li>
         </ul>
       </nav>
-      <div class="title-block">
-        <h1 class="page-title">Оформление заказа</h1>
-        <div class="auth-cta">
-          <span class="text-interface text-muted">Есть аккаунт?</span>
-          <button class="button text-interface" type="button">Войти</button>
-        </div>
-      </div>
-
       <form class="order-form" action="#" method="post">
+        <div class="title-block">
+          <h1 class="page-title">Оформление заказа</h1>
+          <div class="auth-cta">
+            <span class="text-interface text-muted">Есть аккаунт?</span>
+            <button class="button text-interface" type="button">Войти</button>
+          </div>
+        </div>
 
         <section class="order-form__section products">
           <h2 class="products__title section-title">
@@ -249,20 +248,48 @@
             <div class="contacts__item contacts__item--full-width">
               <label class="contacts__label" for="address">Адрес доставки</label>
               <input class="contacts__input" type="text" id="address" name="address" placeholder="Адрес доставки" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required autocomplete="shipping" aria-label="Полный адрес доставки">
-
-              <div class="contacts__map" id="map">
-                Карта
-              </div>
             </div>
           </div>
         </section>
+        <section class="order-form__section map">
+          Карта!!!
+        </section>
+        <!-- Секция оплаты -->
+        <section class="order-form__section payment">
+          <h3 class="payment__title">Оплата</h3>
+          <div class="payment__methods">
+            <!-- способы оплаты -->
+          </div>
+          <div class="payment__details">
+            <!-- детали оплаты -->
+          </div>
+        </section>
+
+        <!-- Секция комментариев -->
+        <section class="order-form__section comment">
+          <h3 class="comment__title">Комментарий к заказу</h3>
+          <textarea class="comment__textarea" name="comment" placeholder="Ваш комментарий к заказу"></textarea>
+        </section>
+
+        <!-- Секция итогов -->
+        <section class="order-form__section total">
+          <h3 class="total__title">Итого</h3>
+          <div class="total__summary">
+            <!-- итоговая информация -->
+          </div>
+          <div class="total__price">
+            <!-- итоговая сумма -->
+          </div>
+          <button class="order-form__button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+        </section>
+
         <!-- text-meta: "Сроки получения могут измениться",
         подпись к полю "Использовано 0/142 символов"
 
         section-title: Оплата, Итого -->
 
-        <button class="order-form__button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
       </form>
+
     </div>
   </main>
   <footer class="main-footer container">Подвал</footer>
