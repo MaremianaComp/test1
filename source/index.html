@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/order.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -125,47 +125,57 @@
           </h2>
           <ul class="products__list cards">
             <li class="cards__item">
-              <a class="cards__link-image" href="#" aria-label="Страница товара">
+              <input type="hidden" name="product_id" value="12345">
+              <input type="hidden" name="article" value="512-05">
+              <a class="cards__link-image" href="#" aria-label="Страница товара" target="_blank">
                 <picture>
                   <source width="130" height="160" type="image/webp" media="(min-width: 768px)" srcset="images/512-05-desktop@1x.webp 1x, images/512-05-desktop@2x.webp 2x">
                   <source width="90" height="111" type="image/webp" srcset="images/512-05-mobile@1x.webp 1x, images/512-05-mobile@2x.webp 2x">
                   <source width="130" height="160" type="image/jpg" media="(min-width: 768px)" srcset="images/512-05-desktop@1x.jpg 1x, images/512-05-desktop@2x.jpg 2x">
-                  <img class="cards__image" src="images/512-05-mobile@1x.jpg" width="90" height="111" srcset="images/512-05-mobile@2x.jpg 2x" alt="Утепленная стеганная куртка женская Top Hills">
+                  <img class="cards__image" src="images/512-05-mobile@1x.jpg" width="90" height="111" srcset="images/512-05-mobile@2x.jpg 2x" alt="Утепленная стеганая куртка женская Top Hills">
                 </picture>
               </a>
-              <a class="cards__link-text" href="#">
-                <h3 class="cards__title">Утепленная стеганная куртка женская Top Hills</h3>
+              <a class="cards__link-text" href="#" target="_blank">
+                <h3 class="cards__title">Утепленная стеганая куртка женская Top Hills</h3>
               </a>
 
               <div class="cards__details-wrapper">
-                <dl class="cards__product-details text-meta">
-                  <dt class="cards__product-detail-name text-muted">Артикул</dt>
-                  <dd class="cards__product-detail">512-05</dd>
-                  <dt class="cards__product-detail-name text-muted">Сезон</dt>
-                  <dd class="cards__product-detail">Осень-зима</dd>
-                </dl>
+                <div class="cards__product-details text-meta">
+                  <div>
+                    <span class="cards__product-detail-name text-muted">Артикул</span>
+                    <span class="cards__product-detail">512-05</span>
+                  </div>
+                  <div>
+                    <span class="cards__product-detail-name text-muted">Сезон</span>
+                    <span class="cards__product-detail">Осень-зима</span>
+                  </div>
+                </div>
 
                 <fieldset class="cards__sizes">
                   <legend class="visually-hidden">Выберите размер</legend>
                   <div class="cards__sizes-options">
-                    <label class="cards__size-label">
-                      <input class="cards__size-radio" type="radio" name="size-512-05" value="XS">
+                    <input class="cards__size-radio" id="size-xs-12345" type="radio" name="size_12345" value="XS" data-product-id="12345" required>
+                    <label class="cards__size-label" for="size-xs-12345">
                       <span class="cards__size-btn">XS</span>
                     </label>
-                    <label class="cards__size-label">
-                      <input class="cards__size-radio" type="radio" name="size-512-05" value="S">
+
+                    <input class="cards__size-radio" id="size-s-12345" type="radio" name="size_12345" value="S" data-product-id="12345" required>
+                    <label class="cards__size-label" for="size-s-12345">
                       <span class="cards__size-btn">S</span>
                     </label>
-                    <label class="cards__size-label">
-                      <input class="cards__size-radio" type="radio" name="size-512-05" value="M">
+
+                    <input class="cards__size-radio" id="size-m-12345" type="radio" name="size_12345" value="M" data-product-id="12345" required>
+                    <label class="cards__size-label" for="size-m-12345">
                       <span class="cards__size-btn">M</span>
                     </label>
-                    <label class="cards__size-label">
-                      <input class="cards__size-radio" type="radio" name="size-512-05" value="L">
+
+                    <input class="cards__size-radio" id="size-l-12345" type="radio" name="size_12345" value="L" data-product-id="12345" required>
+                    <label class="cards__size-label" for="size-l-12345">
                       <span class="cards__size-btn">L</span>
                     </label>
-                    <label class="cards__size-label">
-                      <input class="cards__size-radio" type="radio" name="size-512-05" value="XL">
+
+                    <input class="cards__size-radio" id="size-xl-12345" type="radio" name="size_12345" value="XL" data-product-id="12345" required>
+                    <label class="cards__size-label" for="size-xl-12345">
                       <span class="cards__size-btn">XL</span>
                     </label>
                   </div>
@@ -174,16 +184,17 @@
                 <fieldset class="cards__colors">
                   <legend class="visually-hidden">Выберите цвет</legend>
                   <div class="cards__colors-options">
-                    <label class="cards__color-label">
-                      <input class="cards__color-radio" type="radio" name="color-512-05" value="black">
+                    <input class="cards__color-radio" id="color-black-12345" type="radio" name="color_12345" value="black" data-product-id="12345" required>
+                    <label class="cards__color-label" for="color-black-12345">
                       <span class="cards__color-btn">Черный</span>
                     </label>
-                    <label class="cards__color-label">
-                      <input class="cards__color-radio" type="radio" name="color-512-05" value="blue">
+                    <input class="cards__color-radio" id="color-blue-12345" type="radio" name="color_12345" value="blue" data-product-id="12345" required>
+                    <label class="cards__color-label" for="color-blue-12345">
                       <span class="cards__color-btn">Синий</span>
                     </label>
-                    <label class="cards__color-label">
-                      <input class="cards__color-radio" type="radio" name="color-512-05" value="brown">
+
+                    <input class="cards__color-radio" id="color-brown-12345" type="radio" name="color_12345" value="brown" data-product-id="12345" required>
+                    <label class="cards__color-label" for="color-brown-12345">
                       <span class="cards__color-btn">Коричневый</span>
                     </label>
                   </div>
@@ -192,9 +203,11 @@
               <div class="cards__prices-group">
                 <div class="cards__prices">
                   <span class="cards__old-price text-meta">12 000 ₽</span>
+                  <input type="hidden" name="old_price_12345" value="12000">
                   <span class="cards__price">10 000 ₽</span>
+                  <input type="hidden" name="price_12345" value="10000">
                 </div>
-                <label class="visually-hidden" for="quantity">Количество</label>
+                <label class="visually-hidden" for="quantity-12345">Количество товара артикул 512-05</label>
                 <div class="cards__quantity">
                   <button class="cards__quantity-btn cards__quantity-btn--minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
@@ -202,7 +215,7 @@
                       <path d="M3 9V11H17V9H3Z"></path>
                     </svg>
                   </button>
-                  <input class="cards__quantity-input" type="number" value="2" id="quantity" name="quantity" placeholder="0">
+                  <input class="cards__quantity-input" type="number" value="2" id="quantity-12345" name="quantity_12345" placeholder="0">
                   <button class="cards__quantity-btn cards__quantity-btn--plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                     <svg class="button-quantity-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -219,6 +232,101 @@
             <li>
               <button class="button text-interface" type="button">Восстановить</button>
             </li>
+            <li class="cards__item">
+              <input type="hidden" name="product_id" value="54321">
+              <input type="hidden" name="article" value="891-256">
+              <a class="cards__link-image" href="#" aria-label="Страница товара" target="_blank">
+                <picture>
+                  <source width="130" height="160" type="image/webp" media="(min-width: 768px)" srcset="images/891-256-desktop@1x.webp 1x, images/891-256-desktop@2x.webp 2x">
+                  <source width="90" height="111" type="image/webp" srcset="images/891-256-mobile@1x.webp 1x, images/891-256-mobile@2x.webp 2x">
+                  <source width="130" height="160" type="image/jpg" media="(min-width: 768px)" srcset="images/891-256-desktop@1x.jpg 1x, images/891-256-desktop@2x.jpg 2x">
+                  <img class="cards__image" src="images/891-256-mobile@1x.jpg" width="90" height="111" srcset="images/891-256-mobile@2x.jpg 2x" alt="Вязаная шапка Zolla">
+                </picture>
+              </a>
+              <a class="cards__link-text" href="#" target="_blank">
+                <h3 class="cards__title">Вязаная шапка Zolla</h3>
+              </a>
+
+              <div class="cards__details-wrapper">
+                <div class="cards__product-details text-meta">
+                  <div>
+                    <span class="cards__product-detail-name text-muted">Артикул</span>
+                    <span class="cards__product-detail">891-256</span>
+                  </div>
+                  <div>
+                    <span class="cards__product-detail-name text-muted">Сезон</span>
+                    <span class="cards__product-detail">Демисезон</span>
+                  </div>
+                </div>
+
+                <fieldset class="cards__sizes">
+                  <legend class="visually-hidden">Выберите размер</legend>
+                  <div class="cards__sizes-options">
+                    <input class="cards__size-radio" id="size-xs-54321" type="radio" name="size_54321" value="XS" data-product-id="54321" required>
+                    <label class="cards__size-label" for="size-xs-54321">
+                      <span class="cards__size-btn">XS</span>
+                    </label>
+
+                    <input class="cards__size-radio" id="size-s-54321" type="radio" name="size_54321" value="S" data-product-id="54321" required>
+                    <label class="cards__size-label" for="size-s-54321">
+                      <span class="cards__size-btn">S</span>
+                    </label>
+
+                    <input class="cards__size-radio" id="size-m-54321" type="radio" name="size_54321" value="M" data-product-id="54321" required>
+                    <label class="cards__size-label" for="size-m-54321">
+                      <span class="cards__size-btn">M</span>
+                    </label>
+
+                    <input class="cards__size-radio" id="size-l-54321" type="radio" name="size_54321" value="L" data-product-id="54321" required>
+                    <label class="cards__size-label" for="size-l-54321">
+                      <span class="cards__size-btn">L</span>
+                    </label>
+
+                    <input class="cards__size-radio" id="size-xl-54321" type="radio" name="size_54321" value="XL" data-product-id="54321" required>
+                    <label class="cards__size-label" for="size-xl-54321">
+                      <span class="cards__size-btn">XL</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="cards__colors">
+                  <legend class="visually-hidden">Выберите цвет</legend>
+                  <div class="cards__colors-options">
+                    <input class="cards__color-radio" id="color-black-54321" type="radio" name="color_54321" value="black" data-product-id="54321" required>
+                    <label class="cards__color-label" for="color-black-54321">
+                      <span class="cards__color-btn">Черный</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="cards__prices-group">
+                <div class="cards__prices">
+                  <!-- <span class="cards__old-price text-meta">12 000 ₽</span> -->
+                  <span class="cards__price">500 ₽</span>
+                  <input type="hidden" name="price_54321" value="500">
+                </div>
+                <label class="visually-hidden" for="quantity-54321">Количество товара артикул 891-256</label>
+                <div class="cards__quantity">
+                  <button class="cards__quantity-btn cards__quantity-btn--minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg class="button-quantity-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"></path>
+                    </svg>
+                  </button>
+                  <input class="cards__quantity-input" type="number" value="1" id="quantity-54321" name="quantity_54321" placeholder="0">
+                  <button class="cards__quantity-btn cards__quantity-btn--plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg class="button-quantity-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="cards__total">
+                  <!-- <span class="cards__total-old text-meta">24 000 ₽</span> -->
+                  <span class="cards__total-price">500 ₽</span>
+                </div>
+              </div>
+            </li>
           </ul>
         </section>
 
@@ -227,67 +335,105 @@
           <div class="contacts__group">
             <div class="contacts__item">
               <label class="contacts__label" for="first-name">Имя</label>
-              <input class="contacts__input" type="text" id="first-name" name="first_name" placeholder="Имя" value="Александр" required autocomplete="given-name">
+              <input class="contacts__input text-label" type="text" id="first-name" name="first_name" placeholder="Имя" value="Александр" required autocomplete="given-name">
             </div>
 
             <div class="contacts__item">
               <label class="contacts__label visually-hidden" for="last-name">Фамилия</label>
-              <input class="contacts__input" type="text" id="last-name" name="last_name" placeholder="Фамилия" required autocomplete="family-name">
+              <input class="contacts__input text-label" type="text" id="last-name" name="last_name" placeholder="Фамилия" required autocomplete="family-name">
             </div>
 
             <div class="contacts__item">
               <label class="contacts__label visually-hidden" for="phone">Телефон</label>
-              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="tel">
+              <input class="contacts__input text-label" type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="tel">
             </div>
 
             <div class="contacts__item">
               <label class="contacts__label visually-hidden" for="email">Email</label>
-              <input class="contacts__input" type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+              <input class="contacts__input text-label" type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
             </div>
 
             <div class="contacts__item contacts__item--full-width">
               <label class="contacts__label" for="address">Адрес доставки</label>
-              <input class="contacts__input" type="text" id="address" name="address" placeholder="Адрес доставки" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required autocomplete="shipping" aria-label="Полный адрес доставки">
+              <input class="contacts__input text-label" type="text" id="address" name="address" placeholder="Адрес доставки" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required autocomplete="shipping" aria-label="Полный адрес доставки">
             </div>
           </div>
         </section>
         <section class="order-form__section map">
-          Карта!!!
+          <h3 class="visually-hidden">Карта</h3>
+          <div class="map__container">Карта!!!</div>
         </section>
         <!-- Секция оплаты -->
         <section class="order-form__section payment">
-          <h3 class="payment__title">Оплата</h3>
+          <h3 class="section-title">Оплата</h3>
           <div class="payment__methods">
-            <!-- способы оплаты -->
-          </div>
-          <div class="payment__details">
-            <!-- детали оплаты -->
+            <input class="payment__input" id="payment-cash" type="radio" name="payment_method" value="cash" required>
+            <label class="payment__label" for="payment-cash">
+              <span class="text-label">Наличными курьеру</span>
+            </label>
+            <input class="payment__input" id="payment-card-courier" type="radio" name="payment_method" value="card-courier" required>
+            <label class="payment__label" for="payment-card-courier">
+              <span class="text-label">Картой курьеру</span>
+            </label>
+            <input class="payment__input" id="payment-card-online" type="radio" name="payment_method" value="card-online" required>
+            <label class="payment__label" for="payment-card-online">
+              <span class="text-label">Картой онлайн</span>
+            </label>
           </div>
         </section>
 
         <!-- Секция комментариев -->
         <section class="order-form__section comment">
           <h3 class="comment__title">Комментарий к заказу</h3>
-          <textarea class="comment__textarea" name="comment" placeholder="Ваш комментарий к заказу"></textarea>
+          <textarea class="comment__textarea text-label" name="comment" placeholder="Ваш комментарий к заказу"></textarea>
+          <span class="text-meta">Использовано 0/142 символов</span>
         </section>
 
-        <!-- Секция итогов -->
         <section class="order-form__section total">
-          <h3 class="total__title">Итого</h3>
-          <div class="total__summary">
-            <!-- итоговая информация -->
+          <h3 class="visually-hidden">Итого</h3>
+
+          <dl class="total__list">
+            <dt class="total__label text-label">Товары</dt>
+            <dd class="total__value" data-price="24500">24 500 ₽</dd>
+
+            <dt class="total__label text-label">Скидка</dt>
+            <dd class="total__value" data-discount="4500">- 4 500 ₽</dd>
+
+            <dt class="total__label">Акции</dt>
+            <dd class="total__value" data-promo="4000">- 4 000 ₽</dd>
+
+            <dt class="total__label">Промокод</dt>
+            <dd class="total__value" data-promocode="500">- 500 ₽</dd>
+
+            <dt class="total__label text-label">Доставка</dt>
+            <dd class="total__value" data-logistic="200">200 ₽</dd>
+          </dl>
+
+          <div class="total__logistic">
+            <label class="total__logistic-label text-label" for="logistic-tumbler">
+              Получить товар со склада
+            </label>
+            <input class="total__logistic-tumbler" id="logistic-tumbler" type="checkbox" name="logistic_method">
+            <span class="total__logistic-switch"></span>
+            <span class="total__logistic-note text-meta">Сроки получения могут изменяться</span>
           </div>
-          <div class="total__price">
-            <!-- итоговая сумма -->
+
+          <div class="total__final">
+            <span class="total__final-label section-title">Итого:</span>
+            <span class="total__final-price" data-total="20700">20 700 ₽</span>
           </div>
+
+          <label class="visually-hidden" for="promocode">Введите промокод</label>
+          <input class="total__input" type="text" placeholder="Введите промокод" id="promocode" name="promocode">
+
+          <div class="total__divider"></div>
+
           <button class="order-form__button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+
+          <p class="total__privacy text-meta">
+            Нажимая кнопку "Оформить заказ", Вы соглашаетесь с политикой конфиденциальности.
+          </p>
         </section>
-
-        <!-- text-meta: "Сроки получения могут измениться",
-        подпись к полю "Использовано 0/142 символов"
-
-        section-title: Оплата, Итого -->
-
       </form>
 
     </div>

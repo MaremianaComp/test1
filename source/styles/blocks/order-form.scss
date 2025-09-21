@@ -1,7 +1,7 @@
 .order-form {
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 33.33%;
     gap: 30px 20px;
     grid-template-areas:
       "title-block total"
