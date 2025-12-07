@@ -1,0 +1,17 @@
+.contacts__textarea.text-label {
+  resize: none;
+  overflow-y: auto;
+  min-height: 60px;
+  line-height: 1.4;
+  transition: height 0.2s ease;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .contacts__textarea.text-label {
+    min-height: 80px;
+    line-height: 1.5;
+  }
+}

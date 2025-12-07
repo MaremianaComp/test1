@@ -141,19 +141,19 @@
 
               <div class="cards__details-wrapper">
                 <div class="cards__product-details text-meta">
-                  <div>
+                  <div class="cards__detail-item">
                     <span class="cards__product-detail-name text-muted">Артикул</span>
                     <span class="cards__product-detail">512-05</span>
                   </div>
-                  <div>
+                  <div class="cards__detail-item">
                     <span class="cards__product-detail-name text-muted">Сезон</span>
                     <span class="cards__product-detail">Осень-зима</span>
                   </div>
                 </div>
 
-                <fieldset class="cards__sizes">
+                <fieldset class="cards__sizes fieldset-reset">
                   <legend class="visually-hidden">Выберите размер</legend>
-                  <div class="cards__sizes-options">
+                  <div class="cards__sizes-options text-meta">
                     <input class="cards__size-radio" id="size-xs-12345" type="radio" name="size_12345" value="XS" data-product-id="12345" required>
                     <label class="cards__size-label" for="size-xs-12345">
                       <span class="cards__size-btn">XS</span>
@@ -164,7 +164,7 @@
                       <span class="cards__size-btn">S</span>
                     </label>
 
-                    <input class="cards__size-radio" id="size-m-12345" type="radio" name="size_12345" value="M" data-product-id="12345" required>
+                    <input class="cards__size-radio" id="size-m-12345" type="radio" name="size_12345" value="M" data-product-id="12345" required checked>
                     <label class="cards__size-label" for="size-m-12345">
                       <span class="cards__size-btn">M</span>
                     </label>
@@ -181,10 +181,10 @@
                   </div>
                 </fieldset>
 
-                <fieldset class="cards__colors">
+                <fieldset class="cards__colors fieldset-reset">
                   <legend class="visually-hidden">Выберите цвет</legend>
                   <div class="cards__colors-options">
-                    <input class="cards__color-radio" id="color-black-12345" type="radio" name="color_12345" value="black" data-product-id="12345" required>
+                    <input class="cards__color-radio" id="color-black-12345" type="radio" name="color_12345" value="black" data-product-id="12345" required checked>
                     <label class="cards__color-label" for="color-black-12345">
                       <span class="cards__color-btn">Черный</span>
                     </label>
@@ -249,25 +249,25 @@
 
               <div class="cards__details-wrapper">
                 <div class="cards__product-details text-meta">
-                  <div>
+                  <div class="cards__detail-item">
                     <span class="cards__product-detail-name text-muted">Артикул</span>
                     <span class="cards__product-detail">891-256</span>
                   </div>
-                  <div>
+                  <div class="cards__detail-item">
                     <span class="cards__product-detail-name text-muted">Сезон</span>
                     <span class="cards__product-detail">Демисезон</span>
                   </div>
                 </div>
 
-                <fieldset class="cards__sizes">
+                <fieldset class="cards__sizes fieldset-reset">
                   <legend class="visually-hidden">Выберите размер</legend>
-                  <div class="cards__sizes-options">
+                  <div class="cards__sizes-options text-meta">
                     <input class="cards__size-radio" id="size-xs-54321" type="radio" name="size_54321" value="XS" data-product-id="54321" required>
                     <label class="cards__size-label" for="size-xs-54321">
                       <span class="cards__size-btn">XS</span>
                     </label>
 
-                    <input class="cards__size-radio" id="size-s-54321" type="radio" name="size_54321" value="S" data-product-id="54321" required>
+                    <input class="cards__size-radio" id="size-s-54321" type="radio" name="size_54321" value="S" data-product-id="54321" required checked>
                     <label class="cards__size-label" for="size-s-54321">
                       <span class="cards__size-btn">S</span>
                     </label>
@@ -282,14 +282,14 @@
                       <span class="cards__size-btn">L</span>
                     </label>
 
-                    <input class="cards__size-radio" id="size-xl-54321" type="radio" name="size_54321" value="XL" data-product-id="54321" required>
+                    <input class="cards__size-radio" id="size-xl-54321" type="radio" name="size_54321" value="XL" data-product-id="54321" required disabled>
                     <label class="cards__size-label" for="size-xl-54321">
                       <span class="cards__size-btn">XL</span>
                     </label>
                   </div>
                 </fieldset>
 
-                <fieldset class="cards__colors">
+                <fieldset class="cards__colors fieldset-reset">
                   <legend class="visually-hidden">Выберите цвет</legend>
                   <div class="cards__colors-options">
                     <input class="cards__color-radio" id="color-black-54321" type="radio" name="color_54321" value="black" data-product-id="54321" required>
@@ -355,13 +355,13 @@
 
             <div class="contacts__item contacts__item--full-width">
               <label class="contacts__label" for="address">Адрес доставки</label>
-              <input class="contacts__input text-label" type="text" id="address" name="address" placeholder="Адрес доставки" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required autocomplete="shipping" aria-label="Полный адрес доставки">
+              <textarea class="contacts__input contacts__textarea text-label" id="address" name="address" placeholder="Адрес доставки" required autocomplete="shipping" aria-label="Полный адрес доставки" rows="2">г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152</textarea>
             </div>
           </div>
         </section>
         <section class="order-form__section map">
           <h3 class="visually-hidden">Карта</h3>
-          <div class="map__container">Карта!!!</div>
+          <div class="map__container" id="map"></div>
         </section>
         <!-- Секция оплаты -->
         <section class="order-form__section payment">
@@ -439,6 +439,9 @@
     </div>
   </main>
   <footer class="main-footer container">Подвал</footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d5b0225c-5744-4d11-b25c-3d32b5698ad1&lang=ru_RU" defer></script>
+  <script src="https://suggestions.dadata.ru/suggestions/v2/suggest.js" defer></script>
+  <script src="scripts/map.js" defer></script>
 </body>
 
 </html>
